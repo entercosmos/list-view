@@ -10,13 +10,7 @@ export default class ListView extends React.Component {
         id: PropTypes.string.isRequired,
         rowCount: PropTypes.number.isRequired,
         rowGetter: PropTypes.func.isRequired,
-        fieldRenderer: PropTypes.func.isRequired,
-        fields: PropTypes.arrayOf(
-            PropTypes.shape({
-                id: PropTypes.string.isRequired,
-                name: PropTypes.string.isRequired
-            })
-        )
+        rowRenderer: PropTypes.func.isRequired
     }
 
     render() {
@@ -37,43 +31,6 @@ export default class ListView extends React.Component {
                     />
                 )}
             </AutoSizer>
-        )
-    }
-
-    cellRenderer = (params) => {
-
-        const {columnIndex, rowData, cellData} = params
-
-        const field = this.props.fields[columnIndex]
-
-        return (
-            <div
-                className={css`
-                    width: 100%;
-                    max-width: 100%;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    line-height: 1.5;
-                    -webkit-box-align: center;
-                    align-items: center;
-                    display: inline-flex;
-                    cursor: pointer;
-                    height: 24px;
-                    overflow: hidden;
-                `}
-            >
-                {this.props.fieldRenderer({
-                    id: rowData.id,
-                    field,
-                    cell: cellData,
-                    index: columnIndex,
-                    props: {
-                        id: field.id,
-                        contextId: 'recordListItem',
-                        roleId: 'readOnly'
-                    }
-                })}
-            </div>
         )
     }
 

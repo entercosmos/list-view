@@ -1,10 +1,10 @@
-# ![ListView](https://user-images.githubusercontent.com/44801418/48134118-91f82f80-e2cb-11e8-9928-c54c3d41015f.png) ListView
+# ![ListView](https://user-images.githubusercontent.com/44801418/48134187-d08dea00-e2cb-11e8-9466-8b05188ccf33.png) ListView
 
 [![npm package][npm-badge]][npm]
 
 Used for displaying records as individual items in a list.
 
-![ListView](https://user-images.githubusercontent.com/44947294/51593386-5b0cdf80-1ef2-11e9-8ce3-905b6754b2a6.gif)
+![ListView](https://user-images.githubusercontent.com/44947294/51615784-ffaa1400-1f28-11e9-81d8-e1b97c169068.gif)
 ## Getting started
 
 ````
@@ -18,14 +18,7 @@ npm install @cmds/list-view --save
 | id | String | ✓ | Unique id for the instance of this view |
 | rowCount | Number | ✓ | The amount of rows to be rendered |
 | rowGetter | Function | ✓ | Return row data for the index `({index: number})` |
-| fieldRenderer | Function | ✓ | Callback invoked whenever one of the cells get's rendered: `({index: number}): jsx` |
-| fields | Array | ✓ | Array of fields to be displayed as columns |
-
-#### Field
-| Property | Type | Required? | Description |
-|:---|:---|:---:|:---|
-| id | String | ✓ | Unique id for the field |
-| name | String | ✓ | Name to be displayed as column name |
+| rowRenderer| Function | ✓ | Callback invoked whenever one of the rows get's rendered: `({index: number, }): jsx` |
 
 ### More information
 
