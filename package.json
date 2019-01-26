@@ -32,7 +32,7 @@
   "devDependencies": {
     "@cmds/attachment-field": "^0.8.0",
     "@cmds/checkbox-field": "^0.3.0",
-    "@cmds/link-to-another-record-field": "^0.3.0",
+    "@cmds/link-to-another-record-field": "^0.5.0",
     "@cmds/long-text-field": "^0.3.1",
     "@cmds/multiple-select-field": "^0.6.0",
     "@cmds/number-field": "^0.7.0",
