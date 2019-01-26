@@ -1,5 +1,7 @@
 # ![ListView](https://user-images.githubusercontent.com/44801418/48134187-d08dea00-e2cb-11e8-9466-8b05188ccf33.png) ListView
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/entercosmos/list-view.svg)](https://greenkeeper.io/)
+
 [![npm package][npm-badge]][npm]
 
 Used for displaying records as individual items in a list.
