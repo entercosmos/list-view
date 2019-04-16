@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
+import 'react-virtualized/styles.css'
 import {css, injectGlobal} from 'emotion'
 import CheckboxField from '@cmds/checkbox-field'
 import AttachmentField from '@cmds/attachment-field'

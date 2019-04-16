@@ -2,7 +2,6 @@ import React from 'react'
 import {css} from 'emotion'
 import PropTypes from 'prop-types'
 import {List, AutoSizer} from 'react-virtualized'
-import 'react-virtualized/styles.css'
 
 export default class ListView extends React.Component {
 

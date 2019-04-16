@@ -1,6 +1,6 @@
 {
   "name": "@cmds/list-view",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Used for displaying records as individual items in a list.",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -20,14 +20,11 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {
-    "emotion": "^10.0.6",
-    "faker": "^4.1.0",
-    "prop-types": "^15.6.2",
-    "react-virtualized": "^9.21.0"
-  },
+  "dependencies": {},
   "peerDependencies": {
-    "react": "16.x"
+    "react": "16.x",
+    "react-virtualized": "^9.21.0",
+    "emotion": "^10.0.6"
   },
   "devDependencies": {
     "@cmds/attachment-field": "^0.8.0",
@@ -39,7 +36,11 @@
     "@cmds/record-list-item": "^0.5.0",
     "@cmds/single-line-text-field": "^0.6.0",
     "@cmds/single-select-field": "^0.5.0",
+    "prop-types": "^15.6.2",
+    "faker": "^4.1.0",
+    "emotion": "^10.0.6",
     "immutable": "^4.0.0-rc.12",
+    "react-virtualized": "^9.21.0",
     "lodash": "^4.17.11",
     "nwb": "0.23.x",
     "react": "^16.7.0",
