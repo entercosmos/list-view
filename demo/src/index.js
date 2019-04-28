@@ -25,7 +25,7 @@ injectGlobal`
     }
     body {
         font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-        background-color: #fff;
+        margin: 0;
     }
 `
 
@@ -154,43 +154,14 @@ class Demo extends Component {
                     bottom: 0;
                 `}
             >
-                <div
-                    className={css`
-                        position: fixed;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        height: 130px;
-                        z-index: 1030;
-                        background-color: #fff;
-                        padding-left: 20px;
-                        padding-right: 20px;
-                        border-bottom: 1px solid #ccc;
-                    `}
-                >
-                    <h1>ListView <a href="https://www.npmjs.org/package/@cmds/list-view" target="_blank"><img
-                        src="https://img.shields.io/npm/v/@cmds/list-view.svg"/></a></h1>
-                    <p>Used for displaying records as individual items in a list.</p>
-                </div>
-                <div
-                    className={css`
-                        position: absolute;
-                        top: 130px;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        background-color: #fff;
-                    `}
-                >
-                    <ListView
-                        id={'view'}
-                        rowCount={data.content.length}
-                        fields={data.structure.fields}
-                        rowGetter={({index}) => data.content[index]}
-                        rowRenderer={rowRenderer}
-                        fieldRenderer={fieldRenderer}
-                    />
-                </div>
+                <ListView
+                    id={'view'}
+                    rowCount={data.content.length}
+                    fields={data.structure.fields}
+                    rowGetter={({index}) => data.content[index]}
+                    rowRenderer={rowRenderer}
+                    fieldRenderer={fieldRenderer}
+                />
             </div>
         )
     }

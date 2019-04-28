@@ -9,13 +9,15 @@ export default class ListView extends React.Component {
         id: PropTypes.string.isRequired,
         rowCount: PropTypes.number.isRequired,
         rowGetter: PropTypes.func.isRequired,
-        rowRenderer: PropTypes.func.isRequired
+        rowRenderer: PropTypes.func.isRequired,
+        defaultHeight: PropTypes.number,
+        defaultWidth: PropTypes.number,
     }
 
     render() {
 
         return (
-            <AutoSizer>
+            <AutoSizer defaultHeight={this.props.defaultHeight} defaultWidth={this.props.defaultWidth}>
                 {({width, height}) => (
                     <List
                         width={width}
