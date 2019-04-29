@@ -23,7 +23,7 @@ export default class ListView extends React.Component {
                         width={width}
                         height={height}
                         rowCount={this.props.rowCount}
-                        rowHeight={134}
+                        rowHeight={126}
                         rowRenderer={this.rowRenderer}
                         style={{
                             paddingTop: 8,

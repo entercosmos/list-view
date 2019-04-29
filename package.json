@@ -1,6 +1,6 @@
 {
   "name": "@cmds/list-view",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Used for displaying records as individual items in a list.",
   "main": "lib/index.js",
   "module": "es/index.js",
